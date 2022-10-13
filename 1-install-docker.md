@@ -1,5 +1,11 @@
-**<h3 class="text-center text-bold">Setting up WSL with GPU support for Windows</h3>**
+**<h3 class="text-center text-bold">Installing Docker</h3>**
 <br>
+
+The first question is, should I install Docker?
+The short answer: no, you don't. It can however be beneficial for the testing and debugging process of your algorithm container. So find below a Windows tutorial for setting up Docker using Windows Subsystem for Linux (WSL), but please do continue the tutorial, if you get stuck; installing __Docker is not required__.
+
+### **Setting up WSL with GPU support for Windows**
+
 In this tutorial we will show you how to  set up WSL with GPU support. This tutorial assumes that you do not yet have WSL or Docker desktop installed. 
 
 1. Install the Nvidia driver. The required driver depends on your GPU. You can install the driver for your specific GPU [here](https://www.nvidia.com/Download/index.aspx?lang=en-us). 

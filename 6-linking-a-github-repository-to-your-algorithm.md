@@ -1,16 +1,29 @@
+
+
 **<h3 class="text-center ">Linking a GitHub repository</h3>**
+
 <br>
-Instead of building a container image for your algorithm locally and uploading it to Grand Challenge, you can also opt to link a GitHub repository to your algorithm. When a repository is linked to an algorithm, a new container image will be built automatically each time the repository is [tagged](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/managing-commits/managing-tags#creating-a-tag). The following requirements need to be met for this workflow to properly work:
+Instead of building a container image for your algorithm locally and uploading it to Grand Challenge, we recommend to link a GitHub repository to your Algorithm page. When a repository is linked to an algorithm, a new container image will be built automatically each time the repository is [tagged](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/managing-commits/managing-tags#creating-a-tag). The following requirements need to be met for this workflow to properly work:
 
 - There needs to be a Dockerfile in the repository's root. This Dockerfile will be used to build the image.
 - The repository needs to have an open-source license. To ensure your license is valid, you can check if the license is listed in your repository's 'about' section: <br><img src="https://rumc-gcorg-p-public.s3.amazonaws.com/i/2021/11/24/8a258b0f-0e29-4101-9c1c-2484a5aeb1e4.png" width="300">
 - The Grand Challenge GitHub app needs to be installed in the repository
 
-The following licences are currently recognised by Grand Challenge: Apache Licence 2.0, MIT Licence, GNU GPLv3, GNU AGPLv3, Mozilla Public Licence 2.0, Boost Software Licence 1.0, The Unlicence. If your open-source licence is not listed here, please contact us at [support@grand-challenge.org](mailto:support@grand-challenge.org). 
-
+The following licenses are currently recognized by Grand Challenge: Apache License 2.0, MIT License, GNU GPLv3, GNU AGPLv3, Mozilla Public License 2.0, Boost Software License 1.0, The Unlicense. If your open-source license is not listed here, please contact us at [support@grand-challenge.org](mailto:support@grand-challenge.org). 
 <br>
 
+#### **Add a new Algorithm on grand-challenge.org** 
+
+To create an Algorithm in grand-challenge.org, go to [this page](https://grand-challenge.org/algorithms/) and click on **+ Add a new algorithm** to create your algorithm page.  
+
+We restrict access to this feature of Grand Challenge. If you do not see this button, write to us and explain your use case and funding possibilities. **Algorithms for challenges are handled differently. If you need to create an algorithm for a challenge, you can do so on the challenge submission page.** 
+
+![](https://rumc-gcorg-p-public.s3.amazonaws.com/i/2021/04/01/51b86c8e-69d7-4342-b281-4925d9b58a0d.png) 
+
+Create the basic page by answering the questionnaire about your algorithm.
+
 #### **Install Grand Challenge GitHub app** 
+
 To install the Grand Challenge GitHub app, navigate to the `Containers` menu item on your algorithm's page and click the `Link GitHub Repo` button: 
 <img src="https://rumc-gcorg-p-public.s3.amazonaws.com/i/2021/11/24/28caebdf-e39b-4437-aa18-e143d7b9e8ff.png" width="600"><br><br>
 
@@ -37,12 +50,10 @@ If you see a `request` badge, please see **Link a GitHub repository without admi
 The `Containers` menu item will now display the linked repository. 
 
 <br>
-
-#### **Build Docker Container**
+#### **Build Docker Container** 
 You can now start a new build for your algorithm by tagging your linked GitHub repository. A build will be started for each tag. Note that it could take a little while for the build to start as a worker needs to be available to start the build. The builds for your algorithm will be listed in the `Containers` menu item. You can view the build logs for each build by clicking the entry in the overview. 
 
 <br>
-
 ##### **Tagging your repository** 
 You can tag your repository using the [command line interface](https://git-scm.com/book/en/v2/Git-Basics-Tagging), [GitHub Desktop](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/managing-commits/managing-tags#creating-a-tag), your favorite git program, or the web interface of GitHub. To tag your repository using the web interface of GitHub, create a new `release`. 
 
@@ -57,7 +68,6 @@ Enter a name for your release to create the release and automatically tag your r
 Click `Publish release`.
 
 <br>
-
 ##### **Build process** 
 After the repository is tagged, a Docker container will be created automatically using [AWS CodeBuild](https://docs.aws.amazon.com/codebuild/latest/userguide/concepts.html). You can see the progress of this build in the `Containers` menu item.  
 
@@ -68,7 +78,6 @@ The build logs can be viewed by clicking the `i` button.
 <img src="https://rumc-gcorg-p-public.s3.amazonaws.com/i/2021/12/23/aae8dae8-5e42-4c54-9e06-0b19bc49771a.png" width="700">
 
 <br>
-
 #### **Recurse Submodules** 
 If your repository contains submodules that need to be cloned for the Docker build, enable `Recurse submodules` in the algorithm settings: 
 
@@ -101,3 +110,4 @@ To uninstall the GitHub app, navigate to [github.com/settings/installations](htt
 Scroll to the bottom and click `Uninstall`. 
 
 <img src="https://rumc-gcorg-p-public.s3.amazonaws.com/i/2021/12/23/da571129-8601-4a62-b998-1fe7b1b4fe0c.png" width="700">
+

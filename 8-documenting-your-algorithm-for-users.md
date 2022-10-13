@@ -2,8 +2,13 @@
 <br>
 <img class="center-block d-block mx-auto" src="https://user-images.githubusercontent.com/86470433/138880507-7f7ef15f-665b-4876-a90c-7df5352182b0.png">
 
+#### **Upload a public test case**
+An image is worth a thousand words. So we consider it best practice to upload at least one test case, and make it public.
 
-Here a small overview of the recommended documentation is shown. Example documentation is illustrated below. 
+#### **Write a documentation page**
+Good documentation will ensure proper usage of your Algorithm. So here is a small overview of the recommended documentation is. A filled out example documentation page is illustrated below that. 
+
+
 **<h3 class="text-center ">Recommended documentation</h3>**
 #### **Contact information**
 Mandatory for the documentation is the contact information in case users need to get in touch. Required for the contact information is:

@@ -1,8 +1,11 @@
 **<h3 class="text-center ">Exporting the container</h3>**
 <br>
-To export the container, run `./export.sh` and wait for a few minutes until the container gets created and zipped into a single file. 
 
-#### ** Uploading to grand-challenge.org** 
+Another option to get your Algorithm running on Grand Challenge, is to build and export your container to a zip file and upload the zipped file to Grand Challenge. This not the recommended option anymore, for reasons related to maintainability.
+
+If haven't already, run `.build.sh`.To export the container, run `./export.sh` and wait for a few minutes until the container gets created and zipped into a single file. 
+
+#### **Uploading to grand-challenge.org** 
 
 To create an Algorithm in grand-challenge.org, go to [this page](https://grand-challenge.org/algorithms/) and click on **+ Add a new algorithm** to create your algorithm page.  
 

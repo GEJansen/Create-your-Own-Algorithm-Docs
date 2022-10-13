@@ -89,3 +89,4 @@ scikit-image==0.18.1
 ``` 
 <br>
 Note that we haven't included `torch` as it comes with the PyTorch base image included in our Dockerfile in the previous step.
+

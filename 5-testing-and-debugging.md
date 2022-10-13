@@ -1,9 +1,12 @@
 **<h3 class="text-center ">🔨Building and 🧪testing the container</h3>**
 <br>
-#### **Building**
-Once your scripts are ready, you can build the container by calling `./build.sh`. The recommendation is for your containers to be tested locally before they are uploaded to grand-challenge.org. Uploading a container always takes time and it's best to keep grand-challenge.org out of your development loop.
 
-#### **Testing**
+If you managed to get a local Docker installation working: Hooray! You have unlocked local testing an debugging capabilities for building your Algorithm. If not, do not worry: try your luck in the cloud. Skip this tab and continue to the [next tab](https://grand-challenge.org/documentation/linking-a-github-repository-to-your-algorithm/). Let Grand-Challenge.org try to build it for you.
+
+
+#### **Building & Testing**
+
+Once your scripts are ready, you can build the container by calling `./build.sh`.
 
 The templated repository made by evalutils provides a testing script (`test.sh`). You can extend this template to build your own test suite. 
 
